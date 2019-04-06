@@ -6,13 +6,14 @@ import Navbar from './Navbar';
 import Content from './Content';
 
 function ping(str){
-  console.log(str)
+  var content = document.getElementById('#content')
+  console.log(content)
 }
 
 ReactDOM.render(
   <div>
-    <Navbar follow={str => ping(str)}/>
-    <Content/>
+    <Navbar handler={str => ping(str)}/>
+    <Content />
   </div>, 
   document.getElementById('root')
 );

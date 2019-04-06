@@ -4,12 +4,18 @@ import './Navbar.css';
 function Navbar(props){
   return (
     <nav>
-      <a href="#" onClick={() => props.follow("1")}> bing </a>
-      <a href="#" onClick={() => props.follow("2")}> bing </a>
-      <a href="#" onClick={() => props.follow("3")}> bing </a>
-      <a href="#" onClick={() => props.follow("4")}> bing </a>
-      <a href="#" onClick={() => props.follow("5")}> bing </a>
+      <NavLink handler={props.handler} page="1"/>
+      <NavLink handler={props.handler} page="2"/>
+      <NavLink handler={props.handler} page="3"/>
+      <NavLink handler={props.handler} page="4"/>
+      <NavLink handler={props.handler} page="5"/>
     </nav>
+  )
+}
+
+function NavLink(props){
+  return (
+    <a href="#" name={props.page} onClick={() => props.handler(props.page)}> {props.page} </a>
   )
 }
 

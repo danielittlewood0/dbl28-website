@@ -1,0 +1,12 @@
+nav {
+}
+nav > a {
+  float:left;
+  text-align:center;
+  width:20%;
+  margin: 0px -2px 0px -2px;
+  background-color:black;
+  color:white;
+  border-style:solid;
+  border-width:2px;
+}

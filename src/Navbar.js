@@ -1,10 +1,15 @@
 import React from 'react';
+import './Navbar.css';
 
-function Navbar(){
+function Navbar(props){
   return (
-    <div>
-      hi
-    </div>
+    <nav>
+      <a href="#" onClick={() => props.follow("1")}> bing </a>
+      <a href="#" onClick={() => props.follow("2")}> bing </a>
+      <a href="#" onClick={() => props.follow("3")}> bing </a>
+      <a href="#" onClick={() => props.follow("4")}> bing </a>
+      <a href="#" onClick={() => props.follow("5")}> bing </a>
+    </nav>
   )
 }
 

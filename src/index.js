@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Placeholder from './Placeholder';
 import Navbar from './Navbar';
+import Content from './Content';
 
 function ping(str){
   console.log(str)
@@ -11,7 +12,7 @@ function ping(str){
 ReactDOM.render(
   <div>
     <Navbar follow={str => ping(str)}/>
-    <Placeholder />
+    <Content/>
   </div>, 
   document.getElementById('root')
 );

@@ -4,11 +4,11 @@ import './Navbar.css';
 function Navbar(props){
   return (
     <nav>
-      <NavLink handler={props.handler} page="1"/>
-      <NavLink handler={props.handler} page="2"/>
-      <NavLink handler={props.handler} page="3"/>
-      <NavLink handler={props.handler} page="4"/>
-      <NavLink handler={props.handler} page="5"/>
+      <NavLink handler={props.handler} page="About"/>
+      <NavLink handler={props.handler} page="Work"/>
+      <NavLink handler={props.handler} page="Maths"/>
+      <NavLink handler={props.handler} page="Interests"/>
+      <NavLink handler={props.handler} page="Contact"/>
     </nav>
   )
 }

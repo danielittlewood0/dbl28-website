@@ -1,20 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Placeholder from './Placeholder';
-import Navbar from './Navbar';
-import Content from './Content';
-
-function ping(str){
-  var content = document.getElementById('#content')
-  console.log(content)
-}
+import Page from './Page.js';
 
 ReactDOM.render(
-  <div>
-    <Navbar handler={str => ping(str)}/>
-    <Content />
-  </div>, 
+  <Page />,
   document.getElementById('root')
 );
 

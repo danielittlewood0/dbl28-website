@@ -12,7 +12,11 @@ class Content extends Component{
 
   render(){
     if (this.state.page == "About"){
-      return (<p>About</p>)
+      return (
+        <div id="content">
+          <p>About</p>
+        </div>
+      )
     }
     else {
       return (<Placeholder/>)

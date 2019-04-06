@@ -1,0 +1,14 @@
+.Placeholder{
+}
+.Placeholder > p{
+  font-size: 22pt;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align:center;
+  color:black;
+}
+
+.Placeholder > img{
+  margin: auto;
+  display: block;
+}

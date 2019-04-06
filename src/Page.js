@@ -8,20 +8,23 @@ class Page extends Component{
   constructor(){
     super()
     this.state = {
-      page:undefined
+      page: undefined
     }
+    this.setPage = this.setPage.bind(this)
   }
 
-  ping(str){
-    var content = document.getElementById('#content')
-    console.log(str)
+  setPage(page){
+    console.log(page)
+    this.setState({
+      "page":page
+    })
   }
 
   render() {
     return (
       <div>
-        <Navbar handler={str => this.ping(str)}/>
-        <Content />
+        <Navbar handler={page => this.setPage(page)}/>
+        <Content page={this.state.page}/>
       </div>
     )
   }

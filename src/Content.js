@@ -2,20 +2,18 @@ import React,{Component} from 'react';
 import Placeholder from './Placeholder';
 
 class Content extends Component{
-  constructor(){
-    super()
-    this.state = { 
-      page:undefined,
-    }
-  }
 
-
-  render(){
-    if (this.state.page == "About"){
+  render(props){
+    if (this.props.page == "About"){
       return (
         <div id="content">
           <p>About</p>
         </div>
+      )
+    }
+    else if (this.props.page == "1"){
+      return (
+        <p> TENDIES </p>
       )
     }
     else {

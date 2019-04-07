@@ -1,15 +1,21 @@
 .Placeholder{
 }
 
+object{
+  padding: 15% 0px;
+  width:50%;
+  margin:auto;
+}
+
 .Placeholder > p{
   font-size: 22pt;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
   text-align:center;
   color:black;
 }
 
-.Placeholder > svg{
-  margin: auto;
-  display: block;
+.message{
+  font-size: 22pt;
+  text-align:center;
+  color:black;
 }
+

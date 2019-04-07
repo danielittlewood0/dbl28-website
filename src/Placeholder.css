@@ -1,5 +1,6 @@
 .Placeholder{
 }
+
 .Placeholder > p{
   font-size: 22pt;
   -ms-transform: translateY(-50%);
@@ -8,7 +9,7 @@
   color:black;
 }
 
-.Placeholder > img{
+.Placeholder > svg{
   margin: auto;
   display: block;
 }

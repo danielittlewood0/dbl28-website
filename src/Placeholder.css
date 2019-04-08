@@ -2,8 +2,8 @@
 }
 
 object{
-  padding: 15% 0px;
   width:50%;
+  max-width:400px;
   margin:auto;
 }
 

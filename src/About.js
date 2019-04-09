@@ -1,11 +1,11 @@
 import React from 'react';
 import Placeholder from './Placeholder';
-import readme from '../README.md'
+import about from 'about.md'
 
 function About(){
   return (
     <div>
-    {readme}
+    {about}
     </div>
   )
 }

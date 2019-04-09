@@ -14,7 +14,7 @@ class Content extends Component{
     else if (this.props.page == "Interests"){ return ( <Interests/> ) }
     else if (this.props.page == "Contact"){ return ( <Contact/> ) }
     else if (this.props.page == "Work"){ return ( <Work/> ) }
-    else { return (<Placeholder/>) }
+    else { return (<div/>) }
   }
 }
 

@@ -1,0 +1,3 @@
+[submodule "js-life"]
+	path = src/js-life
+	url = git@github.com:danielittlewood0/js-life.git

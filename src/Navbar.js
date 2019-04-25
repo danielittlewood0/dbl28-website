@@ -6,7 +6,7 @@ function Navbar(props){
     <nav>
       <NavLink handler={props.handler} page="About"/>
       <NavLink handler={props.handler} page="Work"/>
-      <NavLink handler={props.handler} page="Maths"/>
+      <NavLink handler={props.handler} page="Life"/>
       <NavLink handler={props.handler} page="Interests"/>
       <NavLink handler={props.handler} page="Contact"/>
     </nav>

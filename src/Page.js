@@ -14,7 +14,6 @@ class Page extends Component{
   }
 
   setPage(page){
-    console.log(page)
     this.setState({
       "page":page
     })
@@ -23,7 +22,7 @@ class Page extends Component{
   render() {
     return (
       <div>
-        <Navbar handler={page => this.setPage(page)}/>
+        <Navbar handler={this.setPage}/>
         <Content page={this.state.page}/>
       </div>
     )

@@ -7,12 +7,14 @@ function Life(){
   return (
     <div>
       <h1> Conway's Game of Life.</h1>
-      <div className="life-container">
-        <LifeBoard width={5} height={5}/>
+      <div className={"life-container"}>
+        <LifeBoard width={10} height={10}>
+        </LifeBoard>
       </div>
     </div>
   )
 }
+
 
 export default Life;
 

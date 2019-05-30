@@ -15,7 +15,7 @@ function Navbar(props){
 
 function NavLink(props){
   return (
-    <a href="#" name={props.page} onClick={() => props.handler(props.page)}> {props.page} </a>
+    <a href={props.page.toLowerCase()} name={props.page} onClick={() => props.handler(props.page)}> {props.page} </a>
   )
 }
 

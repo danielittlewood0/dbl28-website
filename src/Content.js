@@ -10,12 +10,12 @@ import Contact from './Contact.js';
 class Content extends Component{
 
   render(props){
-    if (this.props.page == "about"){ return ( <About/> ) }
-    else if (this.props.page == "maths"){ return ( <Maths/> ) }
-    else if (this.props.page == "life"){ return ( <Life/> ) }
-    else if (this.props.page == "interests"){ return ( <Interests/> ) }
-    else if (this.props.page == "contact"){ return ( <Contact/> ) }
-    else if (this.props.page == "work"){ return ( <Work/> ) }
+    if (this.props.page == "About"){ return ( <About/> ) }
+    else if (this.props.page == "Maths"){ return ( <Maths/> ) }
+    else if (this.props.page == "Life"){ return ( <Life/> ) }
+    else if (this.props.page == "Interests"){ return ( <Interests/> ) }
+    else if (this.props.page == "Contact"){ return ( <Contact/> ) }
+    else if (this.props.page == "Work"){ return ( <Work/> ) }
     else if (this.props.page != null){ return(<div> Sorry, I don't know the page {this.props.page}! </div>) }
     else { return (<div/>)}
   }

@@ -4,18 +4,18 @@ import './Navbar.css';
 function Navbar(props){
   return (
     <nav>
-      <NavLink handler={props.handler} page="about"/>
-      <NavLink handler={props.handler} page="work"/>
-      <NavLink handler={props.handler} page="life"/>
-      <NavLink handler={props.handler} page="interests"/>
-      <NavLink handler={props.handler} page="contact"/>
+      <NavLink handler={props.handler} page="About"/>
+      <NavLink handler={props.handler} page="Work"/>
+      <NavLink handler={props.handler} page="Life"/>
+      <NavLink handler={props.handler} page="Interests"/>
+      <NavLink handler={props.handler} page="Contact"/>
     </nav>
   )
 }
 
 function NavLink(props){
   return (
-    <a href=props.page name={props.page} onClick={() => props.handler(props.page)}> {props.page} </a>
+    <a href={props.page.toLowerCase()} name={props.page} onClick={() => props.handler(props.page)}> {props.page} </a>
   )
 }
 

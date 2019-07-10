@@ -11,7 +11,6 @@ class Content extends Component{
   render(props){
     return (
       <div id="content">
-        {"hello"}
       </div>
     )
   }

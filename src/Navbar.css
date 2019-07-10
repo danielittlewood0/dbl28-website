@@ -1,16 +1,10 @@
-nav {
-}
 nav > a {
   float:left;
   text-align:center;
   width:20%;
-  margin: 0px -2px 0px -2px;
-  background-color:#d4b16a;
   color:black;
   text-decoration:none;
-  border-style:solid;
-  border-color:#805C15;
-  border-width:2px;
+  background-color:#fffafa;
 }
 
 a:link {
@@ -23,8 +17,17 @@ a:focus {
 }
 
 a:hover {
-  background-color:white;
 }
 
 a:active {
+}
+
+.underline {
+  height:2px;
+  width:75%;
+  margin:5px auto 0px auto;
+}
+
+a:hover > .underline {
+  background-color:#222222;
 }

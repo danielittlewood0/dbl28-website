@@ -11,14 +11,12 @@ import Page from './Page.js';
 
 const routing = (
   <Router>
-    <div>
-      <Route path="/" component={Page} />
-      <Route path="/life" component={Life} />
-      <Route path="/about" component={About} />
-      <Route path="/work" component={Work} />
-      <Route path="/interests" component={Interests} />
-      <Route path="/contact" component={Contact} />
-    </div>
+    <Route path="/" component={Page} />
+    <Route path="/life" component={Life} />
+    <Route path="/about" component={About} />
+    <Route path="/work" component={Work} />
+    <Route path="/interests" component={Interests} />
+    <Route path="/contact" component={Contact} />
   </Router>
 )
 

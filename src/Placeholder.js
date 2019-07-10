@@ -6,7 +6,7 @@ class Placeholder extends Component {
   render() {
     return (
       <div className="Placeholder">
-      <div class="message">
+      <div className="message">
         <p>
           Welcome to my website! Currently under construction, please don't
           look behind the curtain.

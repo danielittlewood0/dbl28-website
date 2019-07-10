@@ -7,11 +7,11 @@ import About from './About.js';
 import Work from './Work.js';
 import Interests from './Interests.js';
 import Contact from './Contact.js';
-import Page from './Page.js';
+import Navbar from './Navbar.js';
 
 const routing = (
   <Router>
-    <Route path="/" component={Page} />
+    <Route path="/" component={Navbar}/>
     <Route path="/life" component={Life} />
     <Route path="/about" component={About} />
     <Route path="/work" component={Work} />

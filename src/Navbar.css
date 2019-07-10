@@ -7,6 +7,12 @@ nav > a {
   background-color:#fffafa;
 }
 
+nav:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+
 a:link {
 }
 

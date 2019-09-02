@@ -12,10 +12,9 @@ task :build do
   puts "Building in #{BUILD_DIR}..."
   files.each do |source_fname|
     fname = File.basename(source_fname)
+    build_fname = "#{BUILD_DIR}/#{fname}"
     puts "building #{fname}"
-    source_file = File.open("./#{SOURCE_DIR}/#{fname}","r")
-    build_file = File.open("./#{BUILD_DIR}/#{fname}","w")
-    build(source_file, build_file)
+    build(source_fname, build_fname)
   end
   puts "Build complete!"
 end

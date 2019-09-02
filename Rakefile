@@ -9,6 +9,7 @@ end
 
 task :build do
   files = Dir.glob("#{SOURCE_DIR}/*")
+  puts "Building in #{BUILD_DIR}..."
   files.each do |source_fname|
     fname = File.basename(source_fname)
     puts "building #{fname}"

@@ -1,1 +1,1 @@
-../../resources/about.md
+../../../src/about.md

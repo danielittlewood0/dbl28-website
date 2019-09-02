@@ -7,8 +7,9 @@ def build(source_file, build_file)
       build_file.write(line)
     else
       src = match[1]
+      source_dir = File.dirname(source_file.path)
       File.open("#{source_dir}/#{src}", "r").each do |line_to_import| 
-        compiled_file.write(line_to_import)
+        build_file.write(line_to_import)
       end
     end
   end
